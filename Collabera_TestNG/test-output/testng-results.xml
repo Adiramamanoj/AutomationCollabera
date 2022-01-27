@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Failed suite [Default suite]" duration-ms="70494" started-at="2022-01-24T16:12:37 IST" finished-at="2022-01-24T16:13:48 IST">
+    <groups>
+    </groups>
+    <test name="Default test(failed)" duration-ms="70494" started-at="2022-01-24T16:12:37 IST" finished-at="2022-01-24T16:13:48 IST">
+      <class name="testNg_Advanced.TC_Support_001">
+        <test-method status="PASS" signature="searchproducts(java.lang.String)[pri:0, instance:testNg_Advanced.TC_Support_001@1f554b06]" name="searchproducts" duration-ms="63645" started-at="2022-01-24T16:12:38 IST" data-provider="sendMobileInfo" finished-at="2022-01-24T16:13:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[redmi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchproducts -->
+        <test-method status="PASS" signature="searchproducts(java.lang.String)[pri:0, instance:testNg_Advanced.TC_Support_001@1f554b06]" name="searchproducts" duration-ms="62775" started-at="2022-01-24T16:12:38 IST" data-provider="sendMobileInfo" finished-at="2022-01-24T16:13:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[poco]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchproducts -->
+        <test-method status="PASS" signature="searchproducts(java.lang.String)[pri:0, instance:testNg_Advanced.TC_Support_001@1f554b06]" name="searchproducts" duration-ms="69338" started-at="2022-01-24T16:12:38 IST" data-provider="sendMobileInfo" finished-at="2022-01-24T16:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iphone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchproducts -->
+        <test-method status="PASS" signature="searchproducts(java.lang.String)[pri:0, instance:testNg_Advanced.TC_Support_001@1f554b06]" name="searchproducts" duration-ms="69106" started-at="2022-01-24T16:12:38 IST" data-provider="sendMobileInfo" finished-at="2022-01-24T16:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[one plus]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchproducts -->
+      </class> <!-- testNg_Advanced.TC_Support_001 -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
+</testng-results>
