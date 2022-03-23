@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TakingWebPageScreenshot {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		  WebDriver driver= new ChromeDriver();
@@ -26,7 +26,12 @@ public class TakingWebPageScreenshot {
 		  
 		  File destinFile = new File("./errorshots/screenshot1.png");	
 		  
-		  FileUtils.copyFile(tempFile, destinFile);
+		  try {
+			FileUtils.copyFile(tempFile, destinFile);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		  
 		 /* File tempElementFile = driver.findElement(By.xpath("//div[@class='sc-hUfwpO jAOBGr logo']")).getScreenshotAs(OutputType.FILE);   
 		  File destElementFile =  new File("./errorshots/screenshotElement1.png");

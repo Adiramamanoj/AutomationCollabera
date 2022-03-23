@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+  <test thread-count="5" name="Test1" >         <!-- Test Runner for 1 test case for distributed parallel excuetion -->
+    <classes>
+      <class name="testNGBasics.TC_Home_004"/>
+      <class name="testNGBasics.TC_Home_005"/>
+      </classes>
+      </test>
+      
+      
+      <test thread-count="5" name="Test2">      <!-- Test Runner for 2 test case for distributed parallel excuetion -->
+      <classes>
+      <class name="testNGBasics.TC_Home_002"/>
+      <class name="testNGBasics.TC_Home_003"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

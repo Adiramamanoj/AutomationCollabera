@@ -25,25 +25,24 @@ public class ExcelLibrary {
 	 */
 
 	public String readStringData(String sheetName, int rowNum, int cellNum) {
-		Workbook workbook= null;
-
-		try {
-			File absPath= new File(exPath);
-			FileInputStream fis = new FileInputStream(absPath);
-			workbook=WorkbookFactory.create(fis);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (EncryptedDocumentException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		return workbook.getSheet(sheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
-
+		File abspath= new File(exPath);
+		Workbook workbook = null;
+	try {
+		FileInputStream fis= new FileInputStream(abspath);
+		workbook= WorkbookFactory.create(fis);
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (EncryptedDocumentException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
-
-
+	
+	return workbook.getSheet(sheetName).getRow(rowNum).getCell(cellNum).toString();
+	}
 
 	/**
 	 * This Method Is Used Read The Numeric Data From Excel File

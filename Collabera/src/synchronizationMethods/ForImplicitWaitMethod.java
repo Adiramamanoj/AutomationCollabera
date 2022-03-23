@@ -20,7 +20,7 @@ public class ForImplicitWaitMethod {
 //		FluentWait fluentWait = new FluentWait(driver).withTimeout(30, TimeUnit.SECONDS).pollingEvery(300, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
 		          
 		driver.get("https://www.instagram.com/");
-//		explicictWait.until(ExpectedConditions.presenceOfElementLocated(By.name("username")));
+		explicictWait.until(ExpectedConditions.presenceOfElementLocated(By.name("username")));
 		driver.findElement(By.name("username")).sendKeys("manoj_arv");
 	}
 

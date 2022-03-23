@@ -15,6 +15,7 @@ public class LoginPage {
 	@FindBy(name="pwd") private WebElement passwordTextField;
 	@FindBy(id="loginButton") private WebElement loginButton;
 	
+	
 	public WebElement getUserNameTextField() {
 		return userNameTextField;
 	}

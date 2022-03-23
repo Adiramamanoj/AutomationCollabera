@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNg_Advanced.TC_Support_001">
+      <class name="testNg_Advanced.TC_Loans_100">
         <methods>
-          <include name="searchproducts" invocation-numbers="0 1 2 3"/>
+          <include name="actiTimeApp"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- testNg_Advanced.TC_Support_001 -->
+      </class> <!-- testNg_Advanced.TC_Loans_100 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
